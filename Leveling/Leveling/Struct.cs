@@ -4,6 +4,11 @@ namespace Leveling
 {
     public struct Struct
     {
+        public Struct()
+        {
+            
+        } 
+
         public string StructName;
     }
 

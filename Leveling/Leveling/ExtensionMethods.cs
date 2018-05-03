@@ -31,7 +31,7 @@ namespace Leveling
         }
 
         //Another thing it is useful for, is when you have an interface and you want to give people a default method on that interface 
-        public static string GetFullName(this IPerson person)
+        public static string GetFullName(this Bob person)
         {
             return $"{person.FirstName} {person.LastName}";
         }

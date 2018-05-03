@@ -3,7 +3,7 @@
 namespace Leveling
 {
     //This is most commonly used when you are inheritting 2 interfaces that have a method or property that share a name
-    public class ExplicitImplementation : ISimiliarInterface, ISimpleInterface
+    public class ExplicitImplementation : ISimiliarInterface
     {
         //You can specify which interface this method belongs to by listing the interface you are explicitly implementing 
         //when explicitly implimenting an interfaces method you don't specify the scope because it must be public
@@ -13,10 +13,7 @@ namespace Leveling
         }
 
         //As you can see here you don't have to explicitly implement the interface if all other methods and properties have already been explicitly implemented
-        public int GetValue()
-        {
-            return 1;
-        }
+
 
         //This method implicitly implements both methods interfaces at the same time
         public string GetText()
