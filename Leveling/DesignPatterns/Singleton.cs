@@ -54,7 +54,7 @@
         //Now this class can be used like any normal class but only internally does it actually reveal he is a singleton
     }
 
-    //When you don't need to worry about timing sush as singleton Queues and you only the data to be shared to act correctly in all instances
+    //When you don't need to worry about timing such as singleton Queues and you only need the data to be shared to act correctly in all instances
     public class MonoStateWithStaticState
     {
         //All you do is keep all the state in private statics
@@ -66,9 +66,10 @@
             set => _property = value;
         }
         //And as you can see this ensures only one copy of the data will exist. 
-        //This one is simpler to read so it's useful when you are doing Caches as the primarily want singleton cache data for speed
+        //This one is simpler to read so it's useful when you are doing Caches as they primarily want static cache data for speed
     }
 
     //there is one danger involved in using Monostate, 
     //programmers who do not know its Monostate do not expect setting a property will affect all other instances of the object.
+    //This danger is mitigated if you make the class immutable though as nothing can be set then
 }
