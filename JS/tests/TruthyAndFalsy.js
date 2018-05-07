@@ -46,4 +46,8 @@ describe("Truthy And Falsy", () => {
     it("undefined is falsy", () => {
         expect(undefined).toBeFalsy();
     });
+
+    it("Symbol is truthy", () => {
+        expect(Symbol()).toBeTruthy();
+    });
 });
