@@ -1,3 +1,4 @@
+//JS unlike other languages never initializes things with null it always goes to undefined, so when you see null you know some explicitly set that to null at some point
 describe("Null vs Undefined", () => {
     describe("When asking for a property not present on an object", () => {
         it("Should be undefined", () => {
@@ -21,4 +22,3 @@ describe("Null vs Undefined", () => {
         });
     });
 });
-//JS unlike other languages never initializes things with null it always goes to undefined, so when you see null you know some explicitly set that to null at some point
