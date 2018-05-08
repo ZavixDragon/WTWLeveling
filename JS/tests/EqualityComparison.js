@@ -15,7 +15,7 @@ describe("Equality Comparison", () => {
         });
     });
     describe("When using '==' for equality comparisons", () => {
-        //We will get into depth about type coercion later for now you just need to be aware it does type coercion here
+        //The in depth information on how type coercion works is under Coercion.JS
         it("Should coerce types before comparison", () => {
             expect(0 == "0").toBeTruthy();
         });
